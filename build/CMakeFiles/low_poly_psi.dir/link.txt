@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/low_poly_psi.dir/home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.o  -o low_poly_psi   -L/home/mingli/Desktop/PolyPSI/build/../hash/lib  -Wl,-rpath,/home/mingli/Desktop/PolyPSI/build/../hash/lib /usr/local/lib/libseal-3.6.a -lblake3 -pthread 

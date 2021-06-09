@@ -1,0 +1,3 @@
+/home/mingli/Desktop/PolyPSI/build/CMakeFiles/rebuild_cache.dir
+/home/mingli/Desktop/PolyPSI/build/CMakeFiles/edit_cache.dir
+/home/mingli/Desktop/PolyPSI/build/CMakeFiles/low_poly_psi.dir
