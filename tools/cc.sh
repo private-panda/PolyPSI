@@ -1,0 +1,1 @@
+ g++ -pthread -o coeffTest coeffTest.cpp polyFFT.cpp -lntl -lgmp

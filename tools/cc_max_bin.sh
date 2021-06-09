@@ -1,0 +1,1 @@
+g++ -pthread -o maxBinSize maxBinSize.cpp -lntl -lgmp
