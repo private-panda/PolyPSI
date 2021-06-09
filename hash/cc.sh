@@ -1,0 +1,1 @@
+g++ -pthread -o test test.cpp -L./lib -lblake3
