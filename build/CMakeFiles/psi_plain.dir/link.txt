@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/psi_plain.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI/psi_plain.cpp.o  -o psi_plain   -L/home/mingli/Documents/SEAL/native/examples/PolyPSI/build/../hash/lib  -Wl,-rpath,/home/mingli/Documents/SEAL/native/examples/PolyPSI/build/../hash/lib /usr/local/lib/libseal-3.6.a -lntl -lgmp -lblake3 -pthread 

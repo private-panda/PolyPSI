@@ -1,3 +1,0 @@
-/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build/CMakeFiles/rebuild_cache.dir
-/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build/CMakeFiles/edit_cache.dir
-/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build/CMakeFiles/dh_oprf.dir
