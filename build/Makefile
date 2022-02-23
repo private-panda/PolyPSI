@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingli/Desktop/PolyPSI/build
+CMAKE_SOURCE_DIR = /home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingli/Desktop/PolyPSI/build
+CMAKE_BINARY_DIR = /home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingli/Desktop/PolyPSI/build/CMakeFiles /home/mingli/Desktop/PolyPSI/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build/CMakeFiles /home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingli/Desktop/PolyPSI/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,665 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named low_poly_psi
+# Target rules for targets named dh_oprf
 
 # Build rule for target.
-low_poly_psi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 low_poly_psi
-.PHONY : low_poly_psi
+dh_oprf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dh_oprf
+.PHONY : dh_oprf
 
 # fast build rule for target.
-low_poly_psi/fast:
-	$(MAKE) -f CMakeFiles/low_poly_psi.dir/build.make CMakeFiles/low_poly_psi.dir/build
-.PHONY : low_poly_psi/fast
+dh_oprf/fast:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/build
+.PHONY : dh_oprf/fast
 
-home/mingli/Desktop/PolyPSI/low_poly_psi.o: home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.o
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.o
 
-.PHONY : home/mingli/Desktop/PolyPSI/low_poly_psi.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.o
 
 # target to build an object file
-home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.o:
-	$(MAKE) -f CMakeFiles/low_poly_psi.dir/build.make CMakeFiles/low_poly_psi.dir/home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.o
-.PHONY : home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.o
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.o
 
-home/mingli/Desktop/PolyPSI/low_poly_psi.i: home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.i
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.i
 
-.PHONY : home/mingli/Desktop/PolyPSI/low_poly_psi.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.i
 
 # target to preprocess a source file
-home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.i:
-	$(MAKE) -f CMakeFiles/low_poly_psi.dir/build.make CMakeFiles/low_poly_psi.dir/home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.i
-.PHONY : home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.i
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.i
 
-home/mingli/Desktop/PolyPSI/low_poly_psi.s: home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.s
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.s
 
-.PHONY : home/mingli/Desktop/PolyPSI/low_poly_psi.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.s
 
 # target to generate assembly for a file
-home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.s:
-	$(MAKE) -f CMakeFiles/low_poly_psi.dir/build.make CMakeFiles/low_poly_psi.dir/home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.s
-.PHONY : home/mingli/Desktop/PolyPSI/low_poly_psi.cpp.s
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.c.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.c.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.c.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.c.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.c.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.cpp.s
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.o: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.o
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.o
+
+# target to build an object file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.o:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.o
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.o
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.i: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.i
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.i
+
+# target to preprocess a source file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.i:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.i
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.i
+
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.s: home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.s
+
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.s
+
+# target to generate assembly for a file
+home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.s:
+	$(MAKE) -f CMakeFiles/dh_oprf.dir/build.make CMakeFiles/dh_oprf.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.s
+.PHONY : home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.cpp.s
 
 # Help Target
 help:
@@ -158,10 +779,79 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... low_poly_psi"
-	@echo "... home/mingli/Desktop/PolyPSI/low_poly_psi.o"
-	@echo "... home/mingli/Desktop/PolyPSI/low_poly_psi.i"
-	@echo "... home/mingli/Desktop/PolyPSI/low_poly_psi.s"
+	@echo "... dh_oprf"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/dh_oprf.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/big.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/externals/Miracl/source/ec2.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/pk-based_gattaca/dh-psi_gattaca1.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/bch.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cbitvector.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/codewords.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/connection.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/gqf_file.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/counting_quotient_filter/hashutil.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/TedKrovetzAesNiWrapperC.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/crypto.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/dh.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/ecc-pk-crypto.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/gmp-pk-crypto.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/crypto/intrin_sequential_enc8.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/hashutil.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/itemfilter.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cuckoo_filter/printutil.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/cycleCount-Intel.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/ecc.s"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.o"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.i"
+	@echo "... home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/src/util/parse_options.s"
 .PHONY : help
 
 

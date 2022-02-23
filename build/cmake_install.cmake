@@ -1,4 +1,4 @@
-# Install script for directory: /home/mingli/Desktop/PolyPSI/build
+# Install script for directory: /home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mingli/Desktop/PolyPSI/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/preprocess/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
