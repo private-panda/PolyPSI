@@ -116,7 +116,7 @@ void XGCD(long& d, long& s, long& t, long a, long b)
 }
 long invMod(long a, long n)
 {
-  if(a == 0){
+  if(a == 0 || a == n){
     return 0;
   }
    long d, s, t;
@@ -200,6 +200,183 @@ void dvand (std::vector<uint64_t> &x, const std::vector<uint64_t> &alpha, const 
 
 }
 
+// void dvandprg ( int n, double alpha[], double b[], double x[], double c[], 
+//   double m[] )
+
+// //****************************************************************************80
+// //https://cenit.github.io/jburkardt/vandermonde/vandermonde.cpp
+// //  Purpose:
+// //
+// //    DVANDPRG solves a Vandermonde system A' * x = f progressively.
+// //
+// //  Discussion:
+// //
+// //    This function receives the solution to the system of equations A' * x = f
+// //    where A is a Vandermonde matrix for alpha(0) through alpha(n-1),
+// //    and new values alpha(n) and f(n).  It updates the solution.
+// //
+// //    To solve a system of Nbig equations, this function may be called 
+// //    repeatedly, with N = 1, 2, ..., Nbig.  Each time, a solution to the 
+// //    current subsystem is returned.
+// //
+// //  Licensing:
+// //
+// //    This code is distributed under the GNU LGPL license.
+// //
+// //  Modified:
+// //
+// //    18 April 2014
+// //
+// //  Author:
+// //
+// //    John Burkardt
+// //
+// //  Reference:
+// //
+// //    Ake Bjorck, Victor Pereyra,
+// //    Solution of Vandermonde Systems of Equations,
+// //    Mathematics of Computation,
+// //    Volume 24, Number 112, October 1970, pages 893-903.
+// //
+// //  Parameters:
+// //
+// //    Input, int N, the new order of the matrix, which is 1 
+// //    larger than on the previous call.  For the first call, N must be 1.
+// //
+// //    Input, double ALPHA[N], the parameters that define the matrix.
+// //    The values should be distinct.  The value ALPHA(N) has just been
+// //    added to the system.
+// //
+// //    Input, double B[N], the right hand side of the linear system.
+// //
+// //    Input/output, double X[N].  On input, the first N-1 entries 
+// //    contain the solution of the N-1xN-1 linear system.  On output, the 
+// //    solution to the NxN linear system.
+// //
+// //    Input/output, double C[N], M[N].  On input, the first N-1 
+// //    entries contain factorization data for the N-1xN-1 linear system.  On 
+// //    output, factorization data for the NxN linear system.
+// //
+// {
+//   double cn;
+//   int j;
+ 
+//   c[n-1] = b[n-1];
+//   for ( j = n - 1; 1 <= j; j-- )
+//   {
+//     c[j-1] = ( c[j] - c[j-1] ) / ( alpha[n-1] - alpha[j-1] );
+//   }
+
+//   if ( n == 1 )
+//   {
+//     m[n-1] = 1.0;
+//   }
+//   else
+//   {
+//     m[n-1] = 0.0;
+//   }
+
+//   cn = c[0];
+//   x[n-1] = c[0];
+
+//   for ( j = n - 1; 1 <= j; j-- )
+//   {
+//     m[j] = m[j] - alpha[n-2] * m[j-1];
+//     x[n-j-1] = x[n-j-1] + m[j] * cn;
+//   }
+
+//   return;
+// }
+
+
+void dvandprg ( int n, const std::vector<uint64_t> &alpha, const std::vector<uint64_t> &b, std::vector<uint64_t> &x, std::vector<uint64_t> &c, 
+  std::vector<uint64_t> &m, const uint64_t &modulus)
+
+//****************************************************************************80
+//https://cenit.github.io/jburkardt/vandermonde/vandermonde.cpp
+//  Purpose:
+//
+//    DVANDPRG solves a Vandermonde system A' * x = f progressively.
+//
+//  Discussion:
+//
+//    This function receives the solution to the system of equations A' * x = f
+//    where A is a Vandermonde matrix for alpha(0) through alpha(n-1),
+//    and new values alpha(n) and f(n).  It updates the solution.
+//
+//    To solve a system of Nbig equations, this function may be called 
+//    repeatedly, with N = 1, 2, ..., Nbig.  Each time, a solution to the 
+//    current subsystem is returned.
+//
+//  Licensing:
+//
+//    This code is distributed under the GNU LGPL license.
+//
+//  Modified:
+//
+//    18 April 2014
+//
+//  Author:
+//
+//    John Burkardt
+//
+//  Reference:
+//
+//    Ake Bjorck, Victor Pereyra,
+//    Solution of Vandermonde Systems of Equations,
+//    Mathematics of Computation,
+//    Volume 24, Number 112, October 1970, pages 893-903.
+//
+//  Parameters:
+//
+//    Input, int N, the new order of the matrix, which is 1 
+//    larger than on the previous call.  For the first call, N must be 1.
+//
+//    Input, double ALPHA[N], the parameters that define the matrix.
+//    The values should be distinct.  The value ALPHA(N) has just been
+//    added to the system.
+//
+//    Input, double B[N], the right hand side of the linear system.
+//
+//    Input/output, double X[N].  On input, the first N-1 entries 
+//    contain the solution of the N-1xN-1 linear system.  On output, the 
+//    solution to the NxN linear system.
+//
+//    Input/output, double C[N], M[N].  On input, the first N-1 
+//    entries contain factorization data for the N-1xN-1 linear system.  On 
+//    output, factorization data for the NxN linear system.
+//
+{
+  uint64_t cn;
+  int j;
+ 
+  c[n-1] = b[n-1];
+  for ( j = n - 1; 1 <= j; j-- )
+  {
+    // c[j-1] = ( c[j] - c[j-1] ) / ( alpha[n-1] - alpha[j-1] );
+    c[j-1] = (((modulus + c[j] - c[j-1] )%modulus) * invMod( modulus + alpha[n-1] - alpha[j-1], modulus )) % modulus;
+  }
+
+  if ( n == 1 )
+  {
+    m[n-1] = 1;
+  }
+  else
+  {
+    m[n-1] = 0;
+  }
+
+  cn = c[0];
+  x[n-1] = c[0];
+
+  for ( j = n - 1; 1 <= j; j-- )
+  {
+    m[j] = (modulus + m[j] - (alpha[n-2] * m[j-1]) % modulus) % modulus;
+    x[n-j-1] = (x[n-j-1] + m[j] * cn ) % modulus;
+  }
+
+  return;
+}
 
 
 void polynomial_from_points(std::vector<uint64_t> &xs,
@@ -388,159 +565,3 @@ void polynomial_from_points(std::vector<std::vector<std::vector<uint32_t>>>  &P_
     }
 }
 
-
-// void polynomial_from_points(std::vector<std::vector<uint64_t>> &coeffs, std::vector<std::vector<uint64_t>> &xs, std::vector<std::vector<uint64_t>> &ys,
-//                             const uint64_t sub_sub_bin_size,
-//                             const uint64_t modulus)
-// {
-//     assert((xs.size() == ys.size()) && (xs[0].size() == ys[0].size()));
-
-//     if (xs.size() == 0) {
-//         return;
-//     }
-
-//     int w = xs.size();
-//     int B = xs[0].size();
-//     int b = sub_sub_bin_size;
-//     int alpha = B/b;
-
-//     coeffs.resize(w);
-//     for(int i=0; i<w; i++){
-//       coeffs[i].resize(B);
-//     }
-
-//     // at iteration i of the loop, basis contains the coefficients of the basis
-//     // polynomial (x - xs[0]) * (x - xs[1]) * ... * (x - xs[i - 1])
-
-//     for(int ii=0; ii< w; ii++){
-//       for(int jj=0; jj<alpha; jj++){
-//             std::vector<uint64_t> basis(b);
-//             basis[0] = 1;
-
-//             // at iteration i of the loop, ddif[j] contains the divided difference
-//             // [ys[j], ys[j + 1], ..., ys[j + i]]. thus initially, when i = 0,
-//             // ddif[j] = [ys[j]] = ys[j]
-//             std::vector<uint64_t> ddif(b);
-//             for(int i=0; i<b; i++){
-//               ddif[i] = ys[ii][jj*b+i];
-//             }
-
-//             for (int i = 0; i < b; i++) {
-//                 for (int j = 0; j < i + 1; j++) {
-//                     coeffs[ii][jj*b+j] = (coeffs[ii][jj*b+j] + (ddif[0]*basis[j])%modulus) % modulus;
-//                 }
-
-//                 if (i < b - 1) {
-//                     // update basis: multiply it by (x - xs[i])
-//                     uint64_t neg_x = modulus - (xs[ii][jj*b+i] % modulus);
-
-//                     for (int j = i + 1; j > 0; j--) {
-//                         basis[j] = (basis[j - 1] + (neg_x*basis[j])%modulus) % modulus;
-//                     }
-//                     basis[0] = (basis[0]*neg_x)%modulus;
-
-//                     // update ddif: compute length-(i + 1) divided differences
-//                     for (int j = 0; j + i + 1 < b + 1; j++) {
-//                         // dd_{j,j+i+1} = (dd_{j+1, j+i+1} - dd_{j, j+i}) / (x_{j+i+1} - x_j)
-//                         uint64_t num = (ddif[j + 1] - ddif[j] + modulus) % modulus;
-//                         uint64_t den = (xs[ii][jj*b+j+i+1] - xs[ii][jj*b+j] + modulus) % modulus;
-//                         // ddif[j] = (num*modinv(den, modulus))%modulus;
-//                         ddif[j] = (num*invMod(den, modulus))%modulus;
-//                     }
-//                 }
-//             }
-//       }
-//     }
-
-// }
-
-
-//use lagrane inpterpolation to get the polunomial coeffs. However, supposing n is the vector size, it requests one more element vec[n]=0. Therefore,
-//the following function is not right.
-// void polynomial_from_points(std::vector<std::vector<std::vector<uint64_t>>>  &P_l_coeffs,
-//                             std::vector<std::vector<std::vector<uint64_t>>>  &P_m_coeffs,
-//                             std::vector<std::vector<std::vector<item>>> &x_simple_hashing,
-//                             const uint32_t &b,
-//                             const uint64_t &modulus)
-// {
-
-
-//     int omega = x_simple_hashing.size();
-//     int nu = x_simple_hashing[0].size();
-//     int B = x_simple_hashing[0][0].size();
-//     int alpha = B/b;
-
-//     std::vector<uint64_t> basis(b);//basis is only related with the root, which is the same for l and m
-//     std::vector<uint64_t> ddif_l(b), ddif_m(b);
-//     for(int ii=0; ii<omega; ii++){
-//       for(int jj = 0; jj<nu; jj++){
-//         for(int kk = 0; kk<alpha; kk++){
-//               // at iteration i of the loop, basis contains the coefficients of the basis
-//             // polynomial (x - xs[0]) * (x - xs[1]) * ... * (x - xs[i - 1])
-//             // std::vector<uint64_t> basis(b);
-//             basis[0] = 1;
-
-//             // at iteration i of the loop, ddif[j] contains the divided difference
-//             // [ys[j], ys[j + 1], ..., ys[j + i]]. thus initially, when i = 0,
-//             // ddif[j] = [ys[j]] = ys[j]
-//             // std::vector<uint64_t> ddif(b);
-//             for(int t=0; t<b; t++){
-//               ddif_l[t] = x_simple_hashing[ii][jj][kk*b+t].l;
-//               ddif_m[t] = x_simple_hashing[ii][jj][kk*b+t].m;
-//             }
-//             for(int t=0; t<b; t++){
-//               std::cout<<ddif_l[t]<<", ";
-//             }
-//             std::cout<<std::endl<<b<<std::endl;
-//             for(int t=0; t<b; t++){
-//               std::cout<<x_simple_hashing[ii][jj][kk*b+t].r<<", ";
-//             }
-//             std::cout<<std::endl;
-
-//             for (int i = 0; i < b; i++) {
-//                 for (int j = 0; j < i + 1; j++) {
-//                     P_l_coeffs[ii][jj][kk*b+j] = (P_l_coeffs[ii][jj][kk*b+j] + (ddif_l[0]*basis[j])%modulus) % modulus;
-//                     P_m_coeffs[ii][jj][kk*b+j] = (P_m_coeffs[ii][jj][kk*b+j] + (ddif_m[0]*basis[j])%modulus) % modulus;
-//                 }
-
-//                 if (i < b - 1) {
-//                     // update basis: multiply it by (x - xs[i])
-//                     uint64_t neg_x = modulus - x_simple_hashing[ii][jj][kk*b+i].r;
-
-//                     for (int j = i + 1; j > 0; j--) {
-//                         basis[j] = (basis[j - 1] + (neg_x*basis[j])%modulus) % modulus;
-//                     }
-//                     basis[0] = (basis[0]*neg_x)%modulus;
-
-//                     // update ddif: compute length-(i + 1) divided differences
-//                     for (int j = 0; j + i + 1 < b + 1; j++) {
-//                         // dd_{j,j+i+1} = (dd_{j+1, j+i+1} - dd_{j, j+i}) / (x_{j+i+1} - x_j)
-//                         uint64_t num_l = (modulus + ddif_l[j + 1] - ddif_l[j]) % modulus;
-//                         uint64_t den = (modulus + x_simple_hashing[ii][jj][kk*b+j+i+1].r - x_simple_hashing[ii][jj][kk*b+j].r) % modulus;
-//                         std::cout<<(j+i+1)<<".."<<j<<".."<<x_simple_hashing[ii][jj][kk*b+j+i+1].r<<".."<<x_simple_hashing[ii][jj][kk*b+j].r<<".."<<den<<"> ";
-//                         // ddif[j] = (num*modinv(den, modulus))%modulus;
-//                         auto inv = invMod(den, modulus);
-//                         ddif_l[j] = (num_l*inv)%modulus;
-//                         std::cout<<num_l<<"."<<den<<"."<<inv<<"."<<ddif_l[j]<<", ";
-
-//                         uint64_t num_m = (modulus + ddif_m[j + 1] - ddif_m[j]) % modulus;
-//                         ddif_m[j] = (num_m*inv)%modulus;
-//                     }
-//                     std::cout<<std::endl;
-//                 }
-//                 std::cout<<"basis: "<<std::endl;
-//                 for(int j=0; j<b; j++){
-//                   std::cout<<basis[j]<<",";
-//                 }
-//                 std::cout<<std::endl;
-//                 std::cout<<"ddif_l: "<<std::endl;
-//                 for(int j=0; j<b; j++){
-//                   std::cout<<ddif_l[j]<<",";
-//                 }
-//                 std::cout<<std::endl;
-    
-//             }
-//         }
-//       }
-//     }
-// }
