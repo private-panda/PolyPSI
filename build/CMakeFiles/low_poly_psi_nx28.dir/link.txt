@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/low_poly_psi_nx28.dir/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/low_poly_psi_nx28.cpp.o  -o low_poly_psi_nx28   -L/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/build/../hash/lib  -Wl,-rpath,/home/mingli/Documents/SEAL/native/examples/PolyPSI-OPRF/build/../hash/lib /usr/local/lib/libseal-3.6.a -lblake3 -pthread 
